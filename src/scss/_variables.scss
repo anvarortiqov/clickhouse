@@ -1,9 +1,57 @@
-$desktop: 1336px;
+$desktop: 1230px;
 $tablet: 768px;
 $phone:320px;
-$orange-1: rgba(255, 153, 0, 1);
-$button-orange:#FF9900;
+$background:#E5E5E5;
+$divider-gradient:linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+$primary:#FF5A30;
 $white: #FFFFFF;
-$black: #000000;
-$licolor2: #02897A;
-$lightgray: #7D7D7D;
+$danger:#FF4242;
+$success: #03CEA4;
+$warning:#F89828;
+$info:#5A87FC;
+$gray-900:#1E212C;
+$gray-800:#424551;
+$gray-700:#787A80;
+$gray-600:#9A9CA5;
+$gray-500:#B3B7BC;
+$gray-400:#D7DADD;
+$gray-300:#E5E8ED;
+$gray-200:#F4F5F7;
+$gray-100:#F9F9F9;
+$shadow-small:0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+$shadow-regular: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+$shadow-large:0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+%flex{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+}
+h2{
+    font-size: 32px;
+    line-height: 150%;
+}
+h3{
+    font-size: 28px;
+    line-height: 150%;
+}
+h4{
+    font-size: 24px;
+    line-height: 150%;
+}
+h5{
+    font-size: 20px;
+    line-height: 130%;
+}
+h6{
+    font-size: 16px;
+    line-height: 150%;
+}

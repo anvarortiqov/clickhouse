@@ -1,0 +1,45 @@
+@import '../../scss/main.scss';
+
+.header_basic {
+    width: 100%;
+    @extend %flex;
+    margin: 20px auto;
+}
+ul{
+    @extend %flex;
+    li{
+        .nav_link{
+            margin: 13px 32px;
+            color: var($gray-800);
+            @extend h6;
+        }
+    }
+}
+.logo {
+    margin: 16px 0;
+}
+.call {
+    margin: 2px 0;
+    width: 200px;
+    align-items: center;
+    display: flex;
+    .call_link{
+        font-size: 14px;
+        line-height: 150%;
+        color: var($gray-800);
+    }
+    p{
+        margin: 0;
+    }
+    .icon{
+        // color: var(--primary);
+        color: #FF5A30;
+        font-size:28px ;
+        margin:0 20px ;
+    }
+    // position: relative;
+    // &::after{
+    //     position: absolute;
+    //     content:'';
+    // }
+}
