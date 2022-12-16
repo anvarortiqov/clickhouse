@@ -1,5 +1,6 @@
 import './scss/main.scss';
 import Header from "./components/header/header";
+import AboutPage from './pages/about/about';
 // import { Routes, Route } from "react-router-dom";
 // import HomePage from './pages/home/home';
 // import AboutPage from "./pages/about/about";
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Header/>
+      {/* <AboutPage/> */}
         {/* <Routes>
           <Route path="homepage" element={<HomePage/>} />
           <Route path="aboutpage" element={AboutPage}/>

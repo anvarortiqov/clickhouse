@@ -26,32 +26,40 @@ $shadow-large:0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rg
     width: 1230px;
     margin: 0 auto;
 }
-%flex{
-    display: flex;
-    justify-content: space-between;
-}
+
 h1{
     font-size: 46px;
     line-height: 130%;
     text-align: center;
 }
+
 h2{
     font-size: 32px;
     line-height: 150%;
 }
+
 h3{
     font-size: 28px;
     line-height: 150%;
 }
+
 h4{
     font-size: 24px;
     line-height: 150%;
 }
+
 h5{
     font-size: 20px;
     line-height: 130%;
 }
+
 h6{
     font-size: 16px;
     line-height: 150%;
 }
+
+%flex{
+    display: flex;
+    justify-content: space-between;
+}
+
