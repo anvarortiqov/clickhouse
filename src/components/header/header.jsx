@@ -42,8 +42,8 @@ function Header() {
 
         <Routes>
           <Route path="homepage" element={<HomePage/>} />
-          <Route path="aboutpage" element={AboutPage}/>
-          <Route path="servicepage" element={ServicePage} />
+          <Route path="aboutpage" element={<AboutPage/>}/>
+          <Route path="servicepage" element={<ServicePage/>} />
           <Route path="workpage" element={<WorkPage/>} />
           <Route path="newpage" element={<NewPage/>} />
           <Route path="contactpage" element={<ContactPage/>} />
