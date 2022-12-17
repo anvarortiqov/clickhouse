@@ -8,7 +8,7 @@ function HomePage() {
                         Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis. 
                     </h5>
                     <div className="home_btn">
-                        <button></button>
+                        <button className=""></button>
                     </div>
                 </div>
             </div>
