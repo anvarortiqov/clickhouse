@@ -1,5 +1,7 @@
 @import '../../scss/main.scss';
 
+// .home_section
+
 .home_section {
     background-image: url(../../images/home-bg.png);
     height: 100vh;
@@ -54,6 +56,29 @@
         font-size: 18px;
         .icon{
             margin: 30% auto;
+        }
+    }
+}
+
+// video_section
+
+// core_values
+
+.core_values{
+    .core__cards{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .core__card{
+            width: auto;
+            height: auto;
+            padding: 0 45px;
+            min-width: 285px;
+            &:nth-child(2){
+                border-right: 1px solid $divider-gradient;
+                border-left: 1px solid $divider-gradient;
+
+            }
         }
     }
 }

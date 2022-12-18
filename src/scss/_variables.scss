@@ -48,6 +48,13 @@ $shadow-large:0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rg
     line-height: 160%;
 }
 
+.p__14{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
 .white{
     color: $white;
 }
@@ -59,12 +66,15 @@ $shadow-large:0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rg
 .gray__800{
     color: $gray-800;
 }
-.p__14{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
+
+.mt__120{
+    margin: 120px auto 24px auto;
 }
+
+.mb__60{
+    margin: 0 auto 60px auto;
+}
+
 h1{
     font-size: 46px;
     line-height: 130%;
