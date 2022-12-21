@@ -1,0 +1,52 @@
+@import '../../scss/main.scss';
+
+// footer_section
+
+footer{
+    background-color:$gray-900 ;
+    padding: 80px 0;
+    ul{
+        width: 100%;
+        @extend %flex-between;
+        align-items: center;
+        form{
+            @extend %flex-center;
+            margin: 24px 0 16px 0;
+            input{
+                background: rgba(255, 255, 255, 0.12);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                width: 100%;
+            }
+            button{
+                border-top-left-radius: 0 !important;
+                border-bottom-left-radius: 0 !important;
+            }
+        }
+    }
+    ul:nth-child(1){
+        .connection{
+            @extend %flex-between;
+            .social a{
+                font-size: 24px;
+                margin:0 20px;
+            }
+        }
+    }
+    ul:nth-child(odd){
+        li{
+            width: 500px;
+        }
+    }
+    ul:nth-child(3){
+        li:nth-child(2){
+            @extend %flex-center;
+            gap:16px;
+        }
+        .heart{
+            color: $primary;
+            font-size: 18px;
+        }
+    }
+}

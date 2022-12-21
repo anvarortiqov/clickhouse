@@ -2,12 +2,12 @@
 
 .header_basic {
     width: 100%;
-    @extend %flex;
+    @extend %flex-between;
     margin: 0 auto;
     align-items: center
 }
 ul{
-    @extend %flex;
+    @extend %flex-between;
     li{
         font-style: normal;
         .nav_link{

@@ -8,10 +8,15 @@ body {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.5; 
   flex-direction: column;
   font-family: 'Ubuntu';
   box-sizing: border-box;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 a {

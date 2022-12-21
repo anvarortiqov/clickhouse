@@ -1,0 +1,31 @@
+@import '../../scss/main.scss';
+
+// aHome_section
+
+.abHome_section{
+    background-image: url(../../images/about-bg.png);
+    background-size: cover;
+    height: 600px;
+    h6{
+        width: 600px;
+    }
+}
+
+// abStatic_section
+
+.abStatic_section{
+    .abStatic__bits{
+        @extend %flex-center;
+        gap: 86px;
+        align-items: center;
+        p{
+            max-width: 240px;
+        }
+    }
+}
+
+// abQuotation_section
+
+.abQuotation_section{
+    
+}

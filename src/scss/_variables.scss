@@ -9,6 +9,7 @@ $danger:#FC3300;
 $success: #03CEA4;
 $warning:#F89828;
 $info:#5A87FC;
+$deeppink:#F52F6E;
 $gray-900:#1E212C;
 $gray-800:#424551;
 $gray-700:#787A80;
@@ -29,34 +30,36 @@ $shadow-large:0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rg
 
 .p__20{
     color: $white;
-    font-style: normal;
-    font-weight: 400;
     @extend h5;
 }
 
 .p__18{
     font-size: 18px;
-    font-weight: 400;
     line-height: 150%;
     text-align: center;
 }
 
 .p__16{
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 160%;
 }
 
 .p__14{
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
+    line-height: 150%;
+}
+
+.p__12{
+    font-size: 12px;
     line-height: 150%;
 }
 
 .white{
     color: $white;
+}
+
+.gray__400{
+    color: $gray-400;
 }
 
 .gray__700{
@@ -67,12 +70,20 @@ $shadow-large:0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rg
     color: $gray-800;
 }
 
+.gray__900{
+    color: $gray-900;
+}
+
 .mt__120{
     margin: 120px auto 24px auto;
 }
 
 .mb__60{
     margin: 0 auto 60px auto;
+}
+
+.center{
+    text-align: center;
 }
 
 h1{
@@ -106,9 +117,33 @@ h6{
     line-height: 150%;
 }
 
-%flex{
+.h__72{
+    font-size: 72px;
+    line-height: 130%;
+}
+
+%flex-between{
     display: flex;
     justify-content: space-between;
+}
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+%shadow-radius{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: $shadow-small;
+}
+
+.opacity{
+    color: $white;
+    opacity: 0.6;
 }
 .primary{
     color: $primary;
@@ -139,8 +174,6 @@ h6{
     padding: 0px 24px;
     font-size: 12px;
     line-height: 36px;
-    
-
 }
 .btn-outline{
     @extend .btn;
@@ -150,10 +183,19 @@ h6{
     transition: 1s;
     background-color: transparent;
 }
+.btn-outline-primary{
+    @extend .btn;
+    border: 2px solid $primary;
+    color: $primary;
+    box-sizing: border-box !important;
+    transition: 1s;
+    background-color: transparent;
+}
 .btn:hover{
     background: $danger;
     border: 2px solid $danger;
     transition: 1s;  
+    color: $white;
 }
 .btn:active{
     background: $danger;
@@ -164,21 +206,21 @@ h6{
 .btn-outline:hover{
     border:2px solid $primary;
     transition: 1s;
-    background: #FF5A30;
+    background: $primary;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
-    color: #FFFFFF;
+    color: $white;
 }
 .btn-outline:active{
     transition: 1s;
-    background: #FF5A30;
+    background: $primary;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
-    color: #FFFFFF;
+    color: $white;
 }
 .btn-outline:disabled{
     opacity: 0.5;
