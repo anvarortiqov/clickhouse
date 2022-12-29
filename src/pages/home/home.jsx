@@ -1,6 +1,5 @@
 import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
 import './home.scss'
-import Header from './../../components/header/header';
 import Button from '../../components/Button';
 
 import CoreCards from "../../components/CoreCards";
@@ -36,7 +35,6 @@ function HomePage() {
         <>
         {/* header */}
 
-            <Header/>
 
         {/* home_section */}
 
@@ -83,10 +81,10 @@ function HomePage() {
 
         {/* core_values */}
 
-            <section className="core_values">
+            <section className="core_values" id="coreVal">
                 <div className="container">
-                <h1 className="mt__120 gray__900">Our core values</h1>
-                    <p className="gray__700 p__18 mb__60">
+                <h1 className="gray__900">Our core values</h1>
+                    <p className="gray__700 p__18 mb__60 center">
                         Our mission is to set the highest standards for construction sphere.
                     </p>
                     <div className="core__cards">
@@ -94,13 +92,6 @@ function HomePage() {
                          <CoreCards icon={Hand} title='Safety' text="Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea."/>
                          <CoreCards icon={Slippers} title='Comfort' text="Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad."/>
                     </div>
-                </div>
-            </section>
-
-        {/* service_section */}
-
-            <section className="hser_section">
-                <div className="container">
                     <div className="questions mt__120">
                         <h3 className="gray__900 center">Want to know more? Ask us a question:</h3>
                         <form action="#" id="form">
@@ -121,6 +112,14 @@ function HomePage() {
                             </div>
                         </form>
                     </div>
+                </div>
+            </section>
+
+        {/* service_section */}
+
+            <section className="hser_section">
+                <div className="container">
+
                     <h1 className="center mt__120 gray__900">Our services</h1>
                     <p className="gray__700 mb__60 center">
                         Createx Construction Bureau is a construction giant with a full range of construction services.

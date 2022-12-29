@@ -62,3 +62,30 @@
 
     }
 }
+
+@media screen and (max-width:985px){
+      .form_section{
+        min-height: 826px;
+        form{
+            width: 60%;
+            margin: 50px auto;
+            right: 5%;
+            left: 5%;
+        }
+      }
+}
+
+@media screen and (max-width:650px){
+    .form_section{
+      min-height: 826px;
+      form{
+          width: 90%;
+          margin: 25px auto;
+          right: 5%;
+          left: 5%;
+          h3{
+            margin: 0;
+          }
+      }
+    }
+}

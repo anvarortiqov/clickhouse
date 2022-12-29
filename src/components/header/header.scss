@@ -3,21 +3,39 @@
 .header_basic {
     width: 100%;
     @extend %flex-between;
-    margin: 0 auto;
-    align-items: center
-}
-ul{
-    @extend %flex-between;
-    li{
-        font-style: normal;
-        .nav_link{
-            margin: 0 32px;
-            color:$gray-800;
-            @extend h6;
+    align-items: center;
+    nav .links{
+        @extend %flex-center;
+        align-items: center;
+        ul{
+            @extend %flex-center;
+            padding: 0;
+            li{
+                font-style: normal;
+                .nav_link{
+                    margin: 0 20px;
+                    color:$gray-800;
+                    @extend h6;
+                }
+            }
         }
+    }
+    .close__menu{
+        display: none;
     }
 }
 
+.active-block{
+    transform: translateX(0) !important;
+    transition: all 1s !important;
+    display: block;
+}
+.title{
+    color: red;
+}
+.text{
+    color: blue;
+}
 .call {
     width: 200px;
     align-items: center;
@@ -36,5 +54,67 @@ ul{
         color: $primary;
         font-size:28px ;
         margin:0 20px ;
+    }
+}
+
+@media screen and (max-width:1132px){
+    .header_basic {
+        nav .links ul{
+            li{
+                .nav_link,
+                .icon{
+                    margin: 0 10px ;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1025px){
+    .header_basic {
+        height: 72px;
+        position: relative;
+        nav {
+            .close__menu{
+                display: block;
+            }
+            .links{
+                position: absolute;
+                flex-direction: column;
+                background-color: rgba(255, 90, 48, 0.7);
+                top: 72px;
+                right: 0;
+                width: 50%;
+                height: auto;
+                z-index: 45;
+                padding: 24px;
+                transform: translateX(120%);
+                display: none;
+                ul{
+                    flex-direction: column;
+                    align-items: flex-end;
+                    li{
+                        margin: 10px 0;
+                        font-size: 18px;
+                        color:$white ;
+                        .nav_link,
+                        .call_link{
+                            color: $white;
+                            font-size: 20px;
+                        }
+                    }
+                    p{
+                        color: $gray-400;
+                    }
+                    .call{
+                        flex-direction: row-reverse;
+                        text-align: right;
+                        .icon{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

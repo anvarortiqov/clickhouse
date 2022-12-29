@@ -1,0 +1,166 @@
+@import '../../scss/variables';
+
+// abAvi_home_section
+
+.abAvi_home_section{
+    background-image: url(../../images/abAvi-bg.png);
+    height: 600px;
+    position: relative;
+}
+
+// vacancies_section
+
+.vacancies_section{
+    .vacancies__branch{
+        @extend %flex-between;
+        gap: 24px;
+        .vacancy__bit{
+            width: 705px;
+            padding: 40px;
+            background: $white;
+            border: 1px solid $gray-300;
+            border-radius: 4px;
+            @extend %flex-between;
+            align-items: center;
+            margin: 24px 0;
+            .meta{
+                display: flex;
+                gap: 5px;
+            }
+            .meta-icon{
+                font-size: 20px;
+            }
+            &:hover{
+                box-shadow: $shadow-small;
+                transition: all 0.5s;
+            }
+            &:hover button{
+                background-color: $primary;
+                color: $white;
+            }
+
+            p,
+            h6{
+                margin: 4px 0;
+            }
+        }
+        .vacancy__btn{
+            display: flex;
+            gap: 30px;
+        }
+        .vacancies__bit:nth-child(2){
+            margin-left: 135px;
+        }
+    }
+}
+
+.subscribe-block{
+    width: 486px;
+    margin: 0 auto;
+    position: fixed;
+    top: 150px;
+    left: 40%;
+    display: none;
+    padding:28px 48px 48px 48px;
+    background: $white;
+    border: 1px solid $gray-300;
+    box-shadow: $shadow-large;
+    border-radius: 4px;
+    z-index: 56;
+    .close-subscribe{
+        margin-left: 100%;
+        font-size: 20px;
+        color: $primary;
+    }
+    h3{
+        margin: 0 0 24px 0;
+        width: 100%;
+    }
+    form{
+        width: 90%;
+        input,
+        textarea{
+            width: 100%;
+            @extend %form;
+            margin: 8px auto 20px auto;
+        }
+        button{
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+.subsActive{
+    display: block;
+}
+#cv{
+    top: 3.5%;
+}
+
+@media screen and (max-width:1320px){
+    .vacancies_section{
+        .vacancies__branch{
+            flex-wrap: wrap;
+            justify-content: center;
+            .vacancies__bit:nth-child(2){
+                margin-left: 0 ; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1025px){
+    .abAvi_home_section{
+        background-position-x: -800px;
+    }
+}
+
+@media screen and (max-width:625px){
+    .abAvi_home_section{
+        background-position-x: -1100px;
+    }
+}
+
+@media screen and (max-width:$tablet){
+    .vacancies_section{
+        .vacancies__branch{
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90% !important;
+            .vacancies__bit{
+                width: 100% !important;
+                .vacancy__bit{
+                    width: 100%;
+                }
+            }
+            .vacancies__bit:nth-child(2){
+                margin-left: 0 ; 
+            }
+        }
+    }
+    #abCore{
+        padding: 80px 0 ;
+    }
+}
+@media screen and (max-width:520px){
+    .vacancies_section{
+        .vacancies__branch{
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90% !important;
+            .vacancies__bit{
+                width: 100% !important;
+                .vacancy__bit{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    text-align: center;
+                }
+            }
+            .vacancies__bit:nth-child(2){
+                margin-left: 0 ; 
+            }
+        }
+    }
+}

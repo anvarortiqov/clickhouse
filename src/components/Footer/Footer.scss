@@ -50,3 +50,44 @@ footer{
         }
     }
 }
+
+@media screen and (max-width:1025px){
+    footer {
+        ul{
+            flex-wrap: wrap;
+            li form{
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:765px){
+    footer {
+        ul{
+            margin: 15px 0;
+            padding: 0;
+            li {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:465px){
+    footer {
+       .connection{
+            flex-wrap: wrap;
+            gap: 10px;
+            .social{
+                gap: 0;
+            }
+       }
+       ul{
+        width: 90%;
+        li{
+            width: 90%;
+        }
+       }
+    }
+}

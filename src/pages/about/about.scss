@@ -1,4 +1,4 @@
-@import '../../scss/main.scss';
+@import '../../scss/variables';
 
 // aHome_section
 
@@ -27,5 +27,322 @@
 // abQuotation_section
 
 .abQuotation_section{
+    background-image: url(../../images/quotation-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    padding: 240px 0 120px 0;
+    .quot__cont{
+        position: relative;
+        .quot__info{
+            width: 735px;
+            height: 570px;
+            padding: 80px 105px;
+            background-color: $white;
+            box-shadow: $shadow-small;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            position: absolute;
+            top: -130px;
+            right: -20px;
+            h6{
+                font-weight: bold;
+                width: 495px;
+            }
+            h6:nth-child(1){
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content:url(../../images/braces.png);
+                    margin-left: -50px;
+                }
+            }
+            .info__footer{
+                @extend %flex-between;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.core_values{
+    background-color: $gray-200;
+}
+
+
+// abHistory_section
+
+.abHistory_section{
+    background-color: $gray-200;
+    padding: 50px 0 100px 0;
+    .history__header{
+        @extend %flex-between;
+        align-items: center;
+    }
+    .history__body{
+        @extend %flex-between;
+        align-items: center;
+        margin-top: 60px;
+        .history__date{
+            h4{
+                position: relative;
+                margin: 0;
+                padding: 20px 0;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 18px;
+                    height:18px;
+                    background-color: $gray-600;
+                    border: 4px solid $gray-200;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    margin-left: -50px;
+                    margin-top: 12px;
+                    z-index: 23;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 2px;
+                    height:100%;
+                    background-color: $gray-600;
+                    left: -42px;
+                    // border: 4px solid $gray-200;
+                    // border-radius: 50%;
+                    // -webkit-border-radius: 50%;
+                    // -moz-border-radius: 50%;
+                    // -ms-border-radius: 50%;
+                    // -o-border-radius: 50%;
+                    // margin-left: -50px;
+                    // margin-top: 12px;
+                }
+                &:hover{
+                    color: $primary;
+                    transition: all 0.3s;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    -ms-transition: all 0.3s;
+                    -o-transition: all 0.3s;
+                }   
+            }  
+        }
+        .history__img{
+            p{
+                width: 810px;
+                margin-top: 36px;
+            }
+        }
+    }
+}
+
+#abPartner{
+    background: none;
+}
+
+#abTeam{
+    background: none;
+    background-image: url(../../images/fig-bg.png);
+    background-repeat: no-repeat;
+    .abTeam__cards{
+        @extend %flex-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        .team__card{
+            width: 285px;
+            height: 416px;
+            background-color: $white;
+            .team-person{
+                width: 100%;
+                height: 340px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .hidden-network{
+                    position: absolute;
+                    width: 100%;
+                    background-color:rgba(255, 90, 48, 0.7);
+                    bottom: 0px;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    @extend %flex-center;
+                    padding: 20px;
+                    gap: 10px;
+                    font-size: 20px;
+                    color: $white;
+                    display: none;
+                }
+            }
+            h6{
+                margin:16px 0 4px 0;
+            }
+            p{
+                margin: 0;
+            }
+            &:hover .hidden-network{
+                display: block;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+
+// map_section
+
+.map_section{
+    background-color: $gray-200;
+    padding: 80px 0 120px 0;
+}
+
+@media screen and (max-width:1320px){
+    .abQuotation_section{
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        .quot__cont{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .quot__info{
+                position: relative !important;
+                margin-top: 150px;
+                width: 100%;
+                padding: 70px;
+                right: 0;
+                left: 0;
+                height: auto;
+                h6{
+                    width: 100%;
+                }
+            }
+            .quot__img{
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .map_section{
+        .map__img{
+            width: 90%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px){
+    .abHistory_section{
+        .history__body{
+            .history__img{
+                width: 70%;
+                img{
+                    width: 100%;
+                }
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #abTeam{
+        padding: 10px;
+        h1{
+            margin: 0 auto 24px auto;
+        }
+    }
+}
+
+@media screen and (max-width:1025px){
+    .abHome_section{
+        background-position-x: -800px;
+    }
+}
+
+@media screen and (max-width:625px){
+    .abHome_section{
+        background-position-x: -1100px;
+    }
+}
+
+@media screen and (max-width:985px){
+    .abHome_section{
+        h6{
+            width: 90%;
+        }
+    }
+    .abStatic__bits{
+        flex-wrap: wrap;
+    }
+    .abHistory_section{
+        .history__date{
+            h4{
+                position: relative;
+                margin: 0;
+                padding: 12px 0 !important;
+                &::before{
+                    margin-left: -20px !important;
+                    margin-top: 1px !important;
+                }
+                &::after{
+                    left: -12px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:690px){
+    .abTeam__cards{
+        justify-content: center !important;
+        align-items: center;
+        gap: 0;
+    }
+    .quot__cont{
+        .quot__img{
+            width: 90%;
+            img{
+                width: 100%;
+            }
+        }
+        .quot__info{
+            padding: 25px;
+            h6:nth-child(1){
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content:url(../../images/braces.png);
+                    margin-left: -35px !important;
+                }
+            }
+            .info__footer{
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media screen and (max-width:515px){
+    .abStatic__bits{
+        .abStatic__bit{
+            width: 90%;
+            p{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .map_section{
+        padding: 50px;
+    }
     
 }
