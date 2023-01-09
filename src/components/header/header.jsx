@@ -11,7 +11,6 @@ import ServicePage from './../../pages/services/services';
 import WorkPage from './../../pages/work/work';
 import NewPage from './../../pages/news/news';
 import ContactPage from './../../pages/contacts/contacts';
-import Button from './../Button';
 import { useState } from 'react';
 import AboutAviable from './../../pages/about/aboutAviable';
 import NewAviable from './../../pages/news/newAviable';
@@ -28,13 +27,13 @@ function Header() {
                     <Link to='/homepage'> <img src={logo} alt="there is a logo" /></Link>
                   </div>
                   <nav>
-                    <div className="close__menu"><Button  onClick={()=>{SetNavbar(!Navbar)}} className="btn__reg btn-outline-primary" text="Menu"/></div>
-                    <div className={Navbar?"links":"links active-block"}>
+                    <div className="close__menu"><button className='btn btn__reg' onClick={()=>{ SetNavbar(!Navbar)}}>Menu</button></div>
+                    <div className={Navbar? "links" : "links active-block"}>
                       <ul>
                         <li> <Link to='aboutpage' className='nav_link'>About Us</Link></li>
                         <li> <Link to='servicepage' className='nav_link'>Services</Link></li>
                         <li> <Link to='workpage' className='nav_link'>Work</Link></li>
-                        <li> <Link to='newpage' className='nav_link'>News</Link></li>
+                        <li> <Link to='newspage' className='nav_link'>News</Link></li>
                         <li> <Link to='contactpage' className='nav_link'>Contacts</Link></li>
                       </ul>
                       <ul>
@@ -58,7 +57,7 @@ function Header() {
           <Route path='aboutaviable' element={<AboutAviable/>}/>
           <Route path="servicepage" element={<ServicePage/>} />
           <Route path="workpage" element={<WorkPage/>} />
-          <Route path="newpage" element={<NewPage/>} />
+          <Route path="newspage" element={<NewPage/>} />
           <Route path="newaviablepage" element={<NewAviable/>}/>
           <Route path="contactpage" element={<ContactPage/>} />
         </Routes>
